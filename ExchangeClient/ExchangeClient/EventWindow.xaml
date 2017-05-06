@@ -1,0 +1,39 @@
+﻿<Window x:Class="ExchangeClient.EventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить событие" Height="310" Width="300"
+        Background="Black" Loaded="Window_Loaded">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" Margin="5" DockPanel.Dock="Bottom">
+            <Button Name="btnOk" Margin="5" Padding="20 5" Click="btnOk_Click">Ok</Button>
+            <Button Name="btnCancel" Margin="5" Padding="20 5" Click="btnCancel_Click">Cancel</Button>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <Label HorizontalAlignment="Left" Margin="5 0">Название ценной бумаги</Label>
+            <TextBox Name="tbTitle" Margin="5"></TextBox>
+            <Label HorizontalAlignment="Left" Margin="5 0">Список параметров</Label>
+            <ComboBox Name="cmbParam" Margin="5"></ComboBox>
+            <Label HorizontalAlignment="Left" Margin="5 0">Условие</Label>
+            <GroupBox Margin="5" Name="grCondition">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton Content="=" IsChecked="True" Checked="RadioButton_Checked"/>
+                    <RadioButton Content="&gt;" Checked="RadioButton_Checked" Grid.Column="1"></RadioButton>
+                    <RadioButton Content="&lt;" Checked="RadioButton_Checked" IsChecked="False" Grid.Row="1"/>
+                    <RadioButton Content="&gt;=" Checked="RadioButton_Checked" IsChecked="False" Grid.Row="1" Grid.Column="1"></RadioButton>
+                    <RadioButton Content="&lt;=" Checked="RadioButton_Checked" IsChecked="False" Grid.Row="2"></RadioButton>
+                </Grid>
+            </GroupBox>
+            <Label HorizontalAlignment="Left" Margin="5 0">Значение параметра</Label>
+            <TextBox Name="tbParam" Margin="5"></TextBox>
+        </StackPanel>
+    </DockPanel>
+</Window>

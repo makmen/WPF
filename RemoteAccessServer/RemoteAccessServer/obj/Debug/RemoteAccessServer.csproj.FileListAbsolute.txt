@@ -1,0 +1,6 @@
+D:\need\buffer\train_NET\RemoteAccessServer\RemoteAccessServer\bin\Debug\RemoteAccessServer.exe.config
+D:\need\buffer\train_NET\RemoteAccessServer\RemoteAccessServer\bin\Debug\RemoteAccessServer.exe
+D:\need\buffer\train_NET\RemoteAccessServer\RemoteAccessServer\bin\Debug\RemoteAccessServer.pdb
+D:\need\buffer\train_NET\RemoteAccessServer\RemoteAccessServer\obj\Debug\RemoteAccessServer.csprojResolveAssemblyReference.cache
+D:\need\buffer\train_NET\RemoteAccessServer\RemoteAccessServer\obj\Debug\RemoteAccessServer.exe
+D:\need\buffer\train_NET\RemoteAccessServer\RemoteAccessServer\obj\Debug\RemoteAccessServer.pdb

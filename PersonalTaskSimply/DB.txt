@@ -1,0 +1,55 @@
+CREATE TABLE Employees (
+Id INT IDENTITY NOT NULL,
+Name VARCHAR(255) NOT NULL, 
+LastName VARCHAR(255) NOT NULL, 
+DateBirth DATETIME NOT NULL,
+Adress VARCHAR(255) NOT NULL, 
+Phone VARCHAR(255),
+Position VARCHAR(255) NOT NULL, 
+Salary Real NOT NULL, 
+erk INT NOT NULL, 
+pkp INT NOT NULL, 
+ekr INT NOT NULL, 
+ems INT NOT NULL, 
+skr INT NOT NULL, 
+Rate INT NOT NULL, 
+CONSTRAINT EmployeesPrimary PRIMARY KEY (Id) 
+);
+
+CREATE TABLE Task(
+Id INT IDENTITY NOT NULL,
+Title VARCHAR(255) NOT NULL, 
+DateBegin DATETIME NOT NULL,
+DateEnd DATETIME NOT NULL,
+Customer VARCHAR(255) NOT NULL, 
+PhoneCustomer VARCHAR(255),
+Execution INT NOT NULL, 
+CONSTRAINT TaskPrimary PRIMARY KEY (Id) 
+);
+
+CREATE TABLE TaskEmployee (
+idEmployee INT NOT NULL,
+idTask INT NOT NULL,
+CONSTRAINT TaskEmployeePrimary PRIMARY KEY (idTask, idEmployee),
+CONSTRAINT TaskEmployeeForeign FOREIGN KEY (idEmployee) REFERENCES Employees,
+CONSTRAINT EmployeeTaskForeign FOREIGN KEY (idTask) REFERENCES Task
+);
+
+SET IDENTITY_INSERT [dbo].[Employees] ON
+INSERT INTO [dbo].[Employees] ([Id], [Name], [LastName], [DateBirth], [Adress], [Phone], [Position], [Salary], [Rate], [erk], [pkp], [ekr], [ems], [skr]) VALUES (2, N'Олег', N'Васильевич', N'2016-06-02 00:00:00', N'Ноумова 16', N'243-34-34', N'Зам пред', 24000000, 33, 39, 26, 10, 81, 9)
+INSERT INTO [dbo].[Employees] ([Id], [Name], [LastName], [DateBirth], [Adress], [Phone], [Position], [Salary], [Rate], [erk], [pkp], [ekr], [ems], [skr]) VALUES (3, N'Дмитрий', N'Лоев', N'1989-06-01 00:00:00', N'Цимирязева - 40', N'', N'Шнопель', 26222000, 44, 47, 22, 88, 26, 40)
+INSERT INTO [dbo].[Employees] ([Id], [Name], [LastName], [DateBirth], [Adress], [Phone], [Position], [Salary], [Rate], [erk], [pkp], [ekr], [ems], [skr]) VALUES (4, N'Елена', N'Семенова', N'1988-05-31 00:00:00', N'Голубева 40', N'', N'Доктор', 22000000, 29, 55, 65, 7, 18, 1)
+INSERT INTO [dbo].[Employees] ([Id], [Name], [LastName], [DateBirth], [Adress], [Phone], [Position], [Salary], [Rate], [erk], [pkp], [ekr], [ems], [skr]) VALUES (5, N'Инорь', N'Варламов', N'1991-01-28 00:00:00', N'Красная 17', N'', N'Варьете', 2323, 53, 68, 89, 14, 54, 43)
+SET IDENTITY_INSERT [dbo].[Employees] OFF
+
+SET IDENTITY_INSERT [dbo].[Task] ON
+INSERT INTO [dbo].[Task] ([Id], [Title], [DateBegin], [DateEnd], [Customer], [PhoneCustomer], [Execution]) VALUES (2, N'Первый', N'2016-06-01 00:00:00', N'2016-06-01 00:00:00', N'ыва', N'', 0)
+INSERT INTO [dbo].[Task] ([Id], [Title], [DateBegin], [DateEnd], [Customer], [PhoneCustomer], [Execution]) VALUES (4, N'Второй', N'2016-06-01 00:00:00', N'2016-06-16 00:00:00', N'выаыва', N'', 0)
+SET IDENTITY_INSERT [dbo].[Task] OFF
+
+
+INSERT INTO [dbo].[TaskEmployee] ([idEmployee], [idTask]) VALUES (2, 2)
+INSERT INTO [dbo].[TaskEmployee] ([idEmployee], [idTask]) VALUES (3, 2)
+INSERT INTO [dbo].[TaskEmployee] ([idEmployee], [idTask]) VALUES (2, 4)
+INSERT INTO [dbo].[TaskEmployee] ([idEmployee], [idTask]) VALUES (3, 4)
+INSERT INTO [dbo].[TaskEmployee] ([idEmployee], [idTask]) VALUES (5, 4)

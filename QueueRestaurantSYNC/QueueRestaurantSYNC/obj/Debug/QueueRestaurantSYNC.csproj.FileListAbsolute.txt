@@ -1,0 +1,5 @@
+D:\need\buffer\train_C#\QueueRestaurantSYNC\QueueRestaurantSYNC\bin\Debug\QueueRestaurantSYNC.exe.config
+D:\need\buffer\train_C#\QueueRestaurantSYNC\QueueRestaurantSYNC\bin\Debug\QueueRestaurantSYNC.exe
+D:\need\buffer\train_C#\QueueRestaurantSYNC\QueueRestaurantSYNC\bin\Debug\QueueRestaurantSYNC.pdb
+D:\need\buffer\train_C#\QueueRestaurantSYNC\QueueRestaurantSYNC\obj\Debug\QueueRestaurantSYNC.exe
+D:\need\buffer\train_C#\QueueRestaurantSYNC\QueueRestaurantSYNC\obj\Debug\QueueRestaurantSYNC.pdb

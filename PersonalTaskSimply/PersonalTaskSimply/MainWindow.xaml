@@ -1,0 +1,50 @@
+﻿<Window 
+    xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"  
+    x:Class="PersonalTaskSimply.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="780" Width="525"
+        Background="#FF4B6FBB">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label>Personal information</Label>
+        <Label Grid.Column="1">Additional information</Label>
+        <ListBox Name="lbPersons" Grid.Row="1" Margin="5" SelectionChanged="lbPersons_SelectionChanged"></ListBox>
+        <TextBox Name="tbPersons"  Grid.Row="1" Grid.Column="1" Margin="5" IsReadOnly="True"></TextBox>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="5">
+            <Button Name="btnAdd" Margin="5 7" Padding="30 0" Click="btnAdd_Click">Add</Button>
+            <Button Name="btnEdit"  Margin="5 7" Padding="30 0" Click="btnEdit_Click">Edit</Button>
+            <Button Name="btnDelete"  Margin="5 7" Padding="30 0" Click="btnDelete_Click">Delete</Button>
+        </StackPanel>
+        <Label Grid.Row="3" Name="lbRate" Style="{StaticResource LabelRate}"
+               HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <chartingToolkit:Chart 
+            x:Name="ColumnSeries" 
+            Grid.Row="3" Grid.Column="1" BorderBrush="Black">
+            <chartingToolkit:ColumnSeries 
+               DependentValuePath="Value" 
+		       IndependentValuePath="Key" 
+               ItemsSource="{Binding}" 
+               IsSelectionEnabled="True" />
+        </chartingToolkit:Chart>
+
+        <ListBox Name="lbTasks" Grid.Row="4" Margin="5" SelectionChanged="lbTasks_SelectionChanged"></ListBox>
+        <TextBox Name="tbTasks"  Grid.Row="4" Grid.Column="1" Margin="5" IsReadOnly="True"></TextBox>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="5">
+            <Button Name="btnAddTask" Margin="5 7" Padding="30 0" Click="btnAddTask_Click">Add Task</Button>
+            <Button Name="btnEditTask"  Margin="5 7" Padding="30 0" Click="btnEditTask_Click">Edit Task</Button>
+            <Button Name="btnDeleteTask"  Margin="5 7" Padding="30 0" Click="btnDeleteTask_Click">Delete Task</Button>
+        </StackPanel>
+    </Grid>
+</Window>

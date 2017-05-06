@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="killModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="killEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="killModel.Employees" />
+    <EntitySet Name="sysdiagrams" EntityType="killModel.sysdiagrams" />
+    <EntitySet Name="Task" EntityType="killModel.Task" />
+    <AssociationSet Name="TaskEmployee" Association="killModel.TaskEmployee">
+      <End Role="Task" EntitySet="Task" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DateBirth" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Adress" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Salary" Type="Single" Nullable="false" />
+    <Property Name="Rate" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Task" Relationship="killModel.TaskEmployee" FromRole="Employees" ToRole="Task" />
+    <Property Name="erk" Type="Int32" />
+    <Property Name="pkp" Type="Int32" />
+    <Property Name="ekr" Type="Int32" />
+    <Property Name="ems" Type="Int32" />
+    <Property Name="skr" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DateBegin" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateEnd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Customer" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneCustomer" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Execution" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employees" Relationship="killModel.TaskEmployee" FromRole="Task" ToRole="Employees" />
+  </EntityType>
+  <Association Name="TaskEmployee">
+    <End Type="killModel.Task" Role="Task" Multiplicity="*" />
+    <End Type="killModel.Employees" Role="Employees" Multiplicity="*" />
+  </Association>
+</Schema>

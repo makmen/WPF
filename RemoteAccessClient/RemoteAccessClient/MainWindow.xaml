@@ -1,0 +1,21 @@
+﻿<Window x:Class="RemoteAccessClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="1000" Background="#FF341D0D" Foreground="#FF892828" Closed="Window_Closed">
+    <Grid Name="myGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="207*"></RowDefinition>
+            <RowDefinition Height="28*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="tbRequest" Margin="5"
+                 TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+        <Button Name="btnSql" Grid.Row="1" Margin="20 10" Padding="10" HorizontalAlignment="Left" Click="btnSql_Click">Выполнить</Button>
+        <ScrollViewer Grid.Column="1">
+            <ListView Name="lvResult" Margin="5"></ListView>
+        </ScrollViewer>
+    </Grid>
+</Window>

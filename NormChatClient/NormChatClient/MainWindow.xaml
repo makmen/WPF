@@ -1,0 +1,11 @@
+﻿<Window x:Class="NormChatClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="150" Width="525" Background="#FFCE6865">
+    <StackPanel>
+        <Label Margin="5">Введите имя в чате:</Label>
+        <TextBox Name="tbName" Margin="5"></TextBox>
+        <Button Margin="5 10"
+                HorizontalAlignment="Left" Padding="20 7" Click="Button_Click">Начать чат</Button>
+    </StackPanel>
+</Window>

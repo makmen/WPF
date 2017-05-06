@@ -1,0 +1,13 @@
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\bin\Debug\AutoMutex.exe.config
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\bin\Debug\AutoMutex.exe
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\bin\Debug\AutoMutex.pdb
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\AutoMutex.csprojResolveAssemblyReference.cache
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\MainWindow.baml
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\MainWindow.g.cs
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\App.g.cs
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\AutoMutex_MarkupCompile.cache
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\AutoMutex.g.resources
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\AutoMutex.Properties.Resources.resources
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\AutoMutex.csproj.GenerateResource.Cache
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\AutoMutex.exe
+D:\need\buffer\train_wpf\AutoMutex\AutoMutex\obj\Debug\AutoMutex.pdb

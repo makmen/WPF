@@ -1,0 +1,27 @@
+﻿<Window x:Class="СashboxSync.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="700" Closing="Window_Closing">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" 
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+            <Label Name="lbNumber"
+                        Margin="8, 2" Padding="10,3">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFDCF5EE" Offset="0.004"/>
+                        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                        <GradientStop Color="#FFB2D4CB" Offset="0.5"/>
+                        <GradientStop Color="#FFC8F5E9" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+        </StackPanel>
+        <ScrollViewer>
+            <TextBox Name="tbCashBox" DockPanel.Dock="Top" Margin="5"
+                     BorderBrush="SteelBlue"
+                     BorderThickness="3,5,3,5"></TextBox>
+        </ScrollViewer>
+    </DockPanel>
+</Window>

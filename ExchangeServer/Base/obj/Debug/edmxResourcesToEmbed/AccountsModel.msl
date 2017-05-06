@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище killModelContainer" CdmEntityContainer="killEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="killModel.Accounts">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="LoginSkype" ColumnName="LoginSkype" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parameters">
+      <EntityTypeMapping TypeName="killModel.Parameters">
+        <MappingFragment StoreEntitySet="Parameters">
+          <ScalarProperty Name="DateRegiser" ColumnName="DateRegiser" />
+          <ScalarProperty Name="VolumeOpenInterest" ColumnName="VolumeOpenInterest" />
+          <ScalarProperty Name="Volatility" ColumnName="Volatility" />
+          <ScalarProperty Name="VolumeDeals" ColumnName="VolumeDeals" />
+          <ScalarProperty Name="AmountDeals" ColumnName="AmountDeals" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

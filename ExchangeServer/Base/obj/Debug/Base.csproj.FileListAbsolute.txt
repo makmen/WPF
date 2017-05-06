@@ -1,0 +1,11 @@
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\Base.dll.config
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\Base.dll
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\Base.pdb
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\EntityFramework.dll
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\EntityFramework.SqlServer.dll
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\EntityFramework.xml
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\EntityFramework.SqlServer.xml
+D:\need\buffer\train_NET\ExchangeServer\Base\bin\Debug\ru\EntityFramework.resources.dll
+D:\need\buffer\train_NET\ExchangeServer\Base\obj\Debug\Base.csprojResolveAssemblyReference.cache
+D:\need\buffer\train_NET\ExchangeServer\Base\obj\Debug\Base.dll
+D:\need\buffer\train_NET\ExchangeServer\Base\obj\Debug\Base.pdb

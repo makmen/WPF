@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище killModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DateBirth" Type="datetime" Nullable="false" />
+    <Property Name="Adress" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="255" />
+    <Property Name="Position" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Salary" Type="real" Nullable="false" />
+    <Property Name="Rate" Type="int" Nullable="false" />
+    <Property Name="erk" Type="int" />
+    <Property Name="pkp" Type="int" />
+    <Property Name="ekr" Type="int" />
+    <Property Name="ems" Type="int" />
+    <Property Name="skr" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DateBegin" Type="datetime" Nullable="false" />
+    <Property Name="DateEnd" Type="datetime" Nullable="false" />
+    <Property Name="Customer" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="PhoneCustomer" Type="varchar" MaxLength="255" />
+    <Property Name="Execution" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaskEmployee">
+    <Key>
+      <PropertyRef Name="idEmployee" />
+      <PropertyRef Name="idTask" />
+    </Key>
+    <Property Name="idEmployee" Type="int" Nullable="false" />
+    <Property Name="idTask" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="EmployeeTaskForeign">
+    <End Role="Task" Type="Self.Task" Multiplicity="1" />
+    <End Role="TaskEmployee" Type="Self.TaskEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TaskEmployee">
+        <PropertyRef Name="idTask" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TaskEmployeeForeign">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="TaskEmployee" Type="Self.TaskEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TaskEmployee">
+        <PropertyRef Name="idEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище killModelContainer">
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaskEmployee" EntityType="Self.TaskEmployee" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="EmployeeTaskForeign" Association="Self.EmployeeTaskForeign">
+      <End Role="Task" EntitySet="Task" />
+      <End Role="TaskEmployee" EntitySet="TaskEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="TaskEmployeeForeign" Association="Self.TaskEmployeeForeign">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="TaskEmployee" EntitySet="TaskEmployee" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,6 @@
+D:\need\buffer\train_NET\NormChatServer\NormChatServer\bin\Debug\NormChatServer.exe.config
+D:\need\buffer\train_NET\NormChatServer\NormChatServer\obj\Debug\NormChatServer.csprojResolveAssemblyReference.cache
+D:\need\buffer\train_NET\NormChatServer\NormChatServer\bin\Debug\NormChatServer.exe
+D:\need\buffer\train_NET\NormChatServer\NormChatServer\bin\Debug\NormChatServer.pdb
+D:\need\buffer\train_NET\NormChatServer\NormChatServer\obj\Debug\NormChatServer.exe
+D:\need\buffer\train_NET\NormChatServer\NormChatServer\obj\Debug\NormChatServer.pdb

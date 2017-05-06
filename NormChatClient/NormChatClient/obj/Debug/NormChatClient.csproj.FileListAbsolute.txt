@@ -1,0 +1,17 @@
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\bin\Debug\NormChatClient.exe.config
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\NormChatClient.csprojResolveAssemblyReference.cache
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\MainWindow.baml
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\ShinyRed.baml
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\App.baml
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\MainWindow.g.cs
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\App.g.cs
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\NormChatClient_MarkupCompile.cache
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\NormChatClient.g.resources
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\NormChatClient.Properties.Resources.resources
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\NormChatClient.csproj.GenerateResource.Cache
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\bin\Debug\NormChatClient.exe
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\bin\Debug\NormChatClient.pdb
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\NormChatClient.exe
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\NormChatClient.pdb
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\ClientWindow.baml
+D:\need\buffer\train_NET\NormChatClient\NormChatClient\obj\Debug\ClientWindow.g.cs

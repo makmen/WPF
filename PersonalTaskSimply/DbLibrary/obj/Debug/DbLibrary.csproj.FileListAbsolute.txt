@@ -1,0 +1,10 @@
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\bin\Debug\DbLibrary.dll.config
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\bin\Debug\DbLibrary.dll
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\bin\Debug\DbLibrary.pdb
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\bin\Debug\EntityFramework.dll
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\bin\Debug\EntityFramework.xml
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\obj\Debug\DbLibrary.csprojResolveAssemblyReference.cache
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\obj\Debug\DbLibrary.dll
+D:\need\buffer\train_wpf\PersonalTaskSimply\DbLibrary\obj\Debug\DbLibrary.pdb
